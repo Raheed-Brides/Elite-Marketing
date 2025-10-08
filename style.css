@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Assuming black from logo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #FFD700; /* Gold color, assuming from logo */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.social-link:hover {
+    background-color: #FFD700; /* Gold on hover */
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.social-link span {
+    display: block;
+}
+
+/* Specific colors for each platform */
+.facebook:hover { background-color: #1877F2; color: #fff; }
+.instagram:hover { background-color: #E4405F; color: #fff; }
+.snapchat:hover { background-color: #FFFC00; color: #000; }
+.tiktok:hover { background-color: #000000; color: #fff; }
+.linkedin:hover { background-color: #0077B5; color: #fff; }
+.twitter:hover { background-color: #000000; color: #fff; }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    .social-link {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
